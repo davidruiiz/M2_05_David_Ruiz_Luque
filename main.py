@@ -34,3 +34,20 @@ print(evaluar_tres_numeros_lista([1,2,3]))
 print(evaluar_tres_numeros_lista([3,2,1]))
 print(evaluar_tres_numeros_lista([2.3,2.4,2.5]))
 
+
+#3) Realiza un programa que lea letras y cuente con una variable contador las letras "a" que se introducen.
+# Para salir del programa, introducir el carácter ".". 
+# Al finalizar mostrar el número de veces que se ha pulsado la letra "a".
+
+def cuenta_letras(texto:str):
+    contador=0
+    for i in range(len(texto)):
+        if texto[i]=='.':
+            break
+        if texto[i]=='a':
+            contador+=1
+    return contador
+
+#Ejemplos
+print(cuenta_letras('ayer me comí una hamburguesa.'))
+print(cuenta_letras('ayer. me comí una hamburguesa.'))
