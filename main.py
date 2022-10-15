@@ -28,7 +28,6 @@ def evaluar_tres_numeros_lista(numeros : list[float]):
 
 
  #Ejemplos
-
 print(evaluar_tres_numeros_lista([0,0,0]))
 print(evaluar_tres_numeros_lista([1,0,1]))
 print(evaluar_tres_numeros_lista([1,2,3]))
