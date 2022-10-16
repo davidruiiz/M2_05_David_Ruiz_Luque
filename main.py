@@ -51,3 +51,22 @@ def cuenta_letras(texto:str):
 #Ejemplos
 print(cuenta_letras('ayer me comí una hamburguesa.'))
 print(cuenta_letras('ayer. me comí una hamburguesa.'))
+
+#4) Crea una lista de palabras, recorre la lista y muestra cada palabra junto con su longitud.
+# Al final, indicar cual fue la palabra con más caracteres.
+
+lista_palabras=['cama','escritorio','silla','mesa','lápiz']
+
+for index in range(len(lista_palabras)):
+    print(lista_palabras[index] ,len(lista_palabras[index]))
+
+longitud_mayor=0
+palabra_mas_larga=[]
+
+for palabra in lista_palabras:
+    if len(palabra)>longitud_mayor:
+        longitud_mayor=len(palabra)
+        palabra_mas_larga=palabra
+
+print("La palabra con más caracteres es:\n",palabra_mas_larga)
+
